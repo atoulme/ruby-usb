@@ -22,7 +22,8 @@
 # SUCH DAMAGE.
 
 require 'mkmf'
-
+find_header("usb.h", "/opt/local/include") 
+find_library("usb", nil, "/opt/local/lib") 
 have_library("usb", "usb_init")
 have_header("ruby/st.h")
 
